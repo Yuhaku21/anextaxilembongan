@@ -6,6 +6,8 @@ Landing page responsif untuk AneX Taxi Lembongan, dibuat dengan HTML, CSS, dan B
 
 Buka `index.html` di browser. Bootstrap dimuat dari jsDelivr, jadi koneksi internet diperlukan agar komponen navigasi dan styling Bootstrap tampil.
 
+Saat halaman pertama kali dibuka, animasi loading akan tampil dan menutup otomatis setelah semua aset halaman selesai dimuat.
+
 ## Menyesuaikan tombol WhatsApp
 
 Atur `WHATSAPP_NUMBER` di `script.js` ke nomor bisnis dalam format internasional tanpa tanda `+` atau spasi, misalnya `6281234567890`. Jika dikosongkan, tautan WhatsApp akan membuka percakapan baru dengan pesan yang sudah terisi agar pengunjung dapat memilih kontak.

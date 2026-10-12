@@ -1,8 +1,31 @@
 const WHATSAPP_NUMBER = "";
-const bookingMessage = "Halo AneX Taxi Lembongan, saya ingin bertanya tentang layanan perjalanan di Nusa Lembongan.";
+const bookingMessage = "Hello AneX Taxi Lembongan, I'd like to ask about your transport services in Nusa Lembongan.";
 const whatsappUrl = WHATSAPP_NUMBER
   ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(bookingMessage)}`
   : `https://wa.me/?text=${encodeURIComponent(bookingMessage)}`;
+
+const pageLoader = document.querySelector("#pageLoader");
+const siteNav = document.querySelector(".site-nav");
+
+function updateNavOnScroll() {
+  siteNav.classList.toggle("is-scrolled", window.scrollY > 20);
+}
+
+updateNavOnScroll();
+window.addEventListener("scroll", updateNavOnScroll, { passive: true });
+
+function hidePageLoader() {
+  window.setTimeout(() => {
+    pageLoader.setAttribute("aria-hidden", "true");
+    document.documentElement.classList.remove("is-loading");
+  }, 500);
+}
+
+if (document.readyState === "complete") {
+  hidePageLoader();
+} else {
+  window.addEventListener("load", hidePageLoader, { once: true });
+}
 
 document.querySelectorAll("[data-whatsapp]").forEach((link) => {
   link.href = whatsappUrl;
@@ -39,7 +62,7 @@ chatForm.addEventListener("submit", (event) => {
   const message = chatMessage.value.trim();
 
   if (!message) {
-    chatMessage.setCustomValidity("Silakan tulis pesan terlebih dahulu.");
+    chatMessage.setCustomValidity("Please write a message first.");
     chatMessage.reportValidity();
     return;
   }

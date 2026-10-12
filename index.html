@@ -1,31 +1,44 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f7f5ef">
-    <meta name="description" content="Jelajahi Nusa Lembongan dengan perjalanan yang nyaman, layanan antar-jemput, dan transportasi pulau yang ramah bersama AneX Taxi Lembongan.">
-    <title>AneX Taxi Lembongan — Jelajahi pulau, tanpa terburu-buru</title>
+    <meta name="description" content="Explore Nusa Lembongan with comfortable rides, reliable transfers, and friendly island transport from AneX Taxi Lembongan.">
+    <title>AneX Taxi Lembongan — Explore the island at your own pace</title>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script>document.documentElement.classList.add("is-loading");</script>
   </head>
   <body>
+    <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+      <div class="page-loader-content">
+        <div class="page-loader-mark">
+          <span class="page-loader-spinner" aria-hidden="true"></span>
+          <img src="./asset/logoanextaxilembongan.png" alt="" class="page-loader-logo">
+        </div>
+        <span class="page-loader-brand">AneX</span>
+        <span class="page-loader-subtitle">Taxi Lembongan</span>
+        <span class="page-loader-message">Getting your journey ready</span>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg site-nav">
       <div class="container">
-        <a class="navbar-brand brand-lockup" href="#beranda" aria-label="AneX Taxi Lembongan, beranda">
+        <a class="navbar-brand brand-lockup" href="#beranda" aria-label="AneX Taxi Lembongan, home">
           <img src="./asset/logoanextaxilembongan.png" alt="" class="brand-logo">
           <span class="brand-name">AneX <span>Taxi Lembongan</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-            <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
-            <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="#pesan">Rencanakan perjalanan <span aria-hidden="true">↗</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#layanan">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeri">Gallery</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="#pesan">Plan your trip <span aria-hidden="true">↗</span></a></li>
           </ul>
         </div>
       </div>
@@ -36,24 +49,24 @@
         <img
           class="hero-image"
           src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.39%20PM.jpeg"
-          alt="Laut biru jernih dan tebing pesisir Nusa Lembongan"
+          alt="Clear blue water and coastal cliffs in Nusa Lembongan"
           fetchpriority="high">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
           <div class="row">
             <div class="col-lg-8 col-xl-7">
               <span class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> YOUR ISLAND, YOUR PACE</span>
-              <h1>Jelajahi pulau,<br><em>tanpa terburu-buru.</em></h1>
-              <p class="hero-copy">Perjalanan yang nyaman, layanan yang hangat, dan lebih banyak waktu untuk menikmati indahnya Nusa Lembongan.</p>
+              <h1>Explore the island,<br><em>at your own pace.</em></h1>
+              <p class="hero-copy">Comfortable rides, warm service, and more time to enjoy the beauty of Nusa Lembongan.</p>
               <div class="hero-actions">
-                <a class="btn btn-sand" href="#pesan">Mulai rencanakan <span aria-hidden="true">↗</span></a>
-                <a class="hero-text-link" href="#layanan">Kenali layanan kami <span aria-hidden="true">↓</span></a>
+                <a class="btn btn-sand" href="#pesan">Plan your trip <span aria-hidden="true">↗</span></a>
+                <a class="hero-text-link" href="#layanan">Explore our services <span aria-hidden="true">↓</span></a>
               </div>
             </div>
           </div>
           <div class="hero-caption">
             <span class="caption-line"></span>
-            <span>PULAU KECIL, KENANGAN BESAR</span>
+            <span>SMALL ISLAND, BIG MEMORIES</span>
             <span class="caption-place">NUSA LEMBONGAN, BALI</span>
           </div>
         </div>
@@ -68,35 +81,35 @@
         <div class="container">
           <div class="row align-items-end gy-4">
             <div class="col-lg-7">
-              <span class="eyebrow"><span class="eyebrow-dot"></span> CARA YANG LEBIH BAIK UNTUK BERKELILING</span>
-              <h2 class="section-title">Bukan sekadar<br>perjalanan <em>menuju tujuan.</em></h2>
+              <span class="eyebrow"><span class="eyebrow-dot"></span> A BETTER WAY TO GET AROUND</span>
+              <h2 class="section-title">More than just<br>getting <em>where you’re going.</em></h2>
             </div>
             <div class="col-lg-4 offset-lg-1">
-              <p class="intro-copy">Dari jemputan pelabuhan hingga menyusuri sudut-sudut pulau, kami membantu perjalanan Anda terasa ringan sejak langkah pertama.</p>
-              <a class="underlined-link" href="#tentang">Cerita kami <span aria-hidden="true">↗</span></a>
+              <p class="intro-copy">From port pick-ups to exploring the island, we make your journey feel effortless from the very first step.</p>
+              <a class="underlined-link" href="#tentang">Our story <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="intro-rule"></div>
           <div class="row g-4 benefit-row">
             <div class="col-6 col-lg-3">
               <span class="benefit-number">01</span>
-              <h3>Nyaman dari awal</h3>
-              <p>Perjalanan yang direncanakan untuk membuat Anda lebih santai.</p>
+              <h3>Comfort from the start</h3>
+              <p>Thoughtfully planned rides to help you feel at ease.</p>
             </div>
             <div class="col-6 col-lg-3">
               <span class="benefit-number">02</span>
-              <h3>Kenal setiap sudut</h3>
-              <p>Jelajahi pulau bersama orang lokal yang mengenal jalannya.</p>
+              <h3>Know every corner</h3>
+              <p>Explore the island with locals who know their way around.</p>
             </div>
             <div class="col-6 col-lg-3">
               <span class="benefit-number">03</span>
-              <h3>Atur sesuai rencana</h3>
-              <p>Pilih perjalanan antar-jemput atau keliling sesuai kebutuhan.</p>
+              <h3>Made for your plans</h3>
+              <p>Choose a transfer or island tour that suits your needs.</p>
             </div>
             <div class="col-6 col-lg-3">
               <span class="benefit-number">04</span>
-              <h3>Lebih banyak menikmati</h3>
-              <p>Luangkan waktu untuk pemandangan, bukan memikirkan perjalanan.</p>
+              <h3>More time to enjoy</h3>
+              <p>Spend your time taking in the views, not worrying about the ride.</p>
             </div>
           </div>
         </div>
@@ -106,10 +119,10 @@
         <div class="container">
           <div class="section-heading-row">
             <div>
-              <span class="eyebrow"><span class="eyebrow-dot"></span> PERJALANAN ANDA, CARA ANDA</span>
-              <h2 class="section-title">Sampai di sana,<br><em>dengan mudah.</em></h2>
+              <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR JOURNEY, YOUR WAY</span>
+              <h2 class="section-title">Getting there,<br><em>made easy.</em></h2>
             </div>
-            <p class="section-side-copy">Perlu tumpangan atau ingin keliling? Kami siap membantu menyusun perjalanan yang pas untuk Anda.</p>
+            <p class="section-side-copy">Need a ride or want to explore? We’re here to help plan the trip that’s right for you.</p>
           </div>
           <div class="row g-3 service-grid">
             <div class="col-md-4">
@@ -118,9 +131,9 @@
                 <div class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none"><path d="M8 31h32M12 31l3-13h18l4 13M15 37h-3v-6m24 6h-3v-6M17 24h14M20 36h8M11 18h-3m32 0h-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="31" r="2" fill="currentColor"/><circle cx="31" cy="31" r="2" fill="currentColor"/></svg>
                 </div>
-                <h3>Jemputan &amp; antar</h3>
-                <p>Antar-jemput pelabuhan dan perjalanan ke akomodasi, dengan koordinasi yang jelas.</p>
-                <a class="service-link" href="#pesan" aria-label="Rencanakan jemputan dan antar">Rencanakan perjalanan <span aria-hidden="true">↗</span></a>
+                <h3>Pick-up &amp; drop-off</h3>
+                <p>Port transfers and rides to your accommodation, with clear coordination.</p>
+                <a class="service-link" href="#pesan" aria-label="Plan a pick-up and drop-off">Plan your trip <span aria-hidden="true">↗</span></a>
               </article>
             </div>
             <div class="col-md-4">
@@ -129,9 +142,9 @@
                 <div class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none"><path d="M8 35c4-4 8-4 12 0s8 4 12 0 8-4 12 0M8 27c4-4 8-4 12 0s8 4 12 0 8-4 12 0M24 9v11m0-11 8 11H16l8-11Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <h3>Keliling pulau</h3>
-                <p>Susun rute sendiri dan nikmati tempat-tempat istimewa di Nusa Lembongan.</p>
-                <a class="service-link" href="#pesan" aria-label="Rencanakan tur keliling pulau">Rencanakan perjalanan <span aria-hidden="true">↗</span></a>
+                <h3>Island tour</h3>
+                <p>Choose your own route and enjoy the special places of Nusa Lembongan.</p>
+                <a class="service-link" href="#pesan" aria-label="Plan an island tour">Plan your trip <span aria-hidden="true">↗</span></a>
               </article>
             </div>
             <div class="col-md-4">
@@ -140,9 +153,9 @@
                 <div class="service-icon" aria-hidden="true">
                   <svg viewBox="0 0 48 48" fill="none"><path d="M9 33h30l-3-14H12L9 33Zm4 0v5h4v-5m18 0v5h-4v-5M15 25h18m-14 4h.01M29 29h.01M10 22H7m34 0h-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <h3>Perjalanan pribadi</h3>
-                <p>Atur transportasi yang lebih fleksibel untuk jadwal dan kebutuhan Anda.</p>
-                <a class="service-link" href="#pesan" aria-label="Rencanakan perjalanan pribadi">Rencanakan perjalanan <span aria-hidden="true">↗</span></a>
+                <h3>Private ride</h3>
+                <p>Arrange flexible transport to fit your schedule and needs.</p>
+                <a class="service-link" href="#pesan" aria-label="Plan a private ride">Plan your trip <span aria-hidden="true">↗</span></a>
               </article>
             </div>
           </div>
@@ -156,18 +169,18 @@
               <div class="story-image-wrap">
                 <img
                   src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.37%20PM.jpeg"
-                  alt="Kendaraan AneX Taxi siap menemani perjalanan di Nusa Lembongan"
+                  alt="An AneX Taxi vehicle ready for your journey around Nusa Lembongan"
                   loading="lazy">
-                <div class="image-note"><span class="eyebrow-dot"></span> PERJALANAN BERSAMA ORANG LOKAL</div>
+                <div class="image-note"><span class="eyebrow-dot"></span> TRAVEL WITH LOCALS</div>
               </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
-              <span class="eyebrow"><span class="eyebrow-dot"></span> SEDIKIT TENTANG KAMI</span>
-              <h2 class="section-title">Pulau ini rumah kami.<br><em>Rasanya seperti rumah Anda.</em></h2>
-              <p class="story-copy">AneX Taxi Lembongan hadir untuk membantu Anda menjelajahi pulau dengan lebih mudah. Kami percaya perjalanan yang baik dimulai dari rasa nyaman dan sambutan yang tulus.</p>
-              <p class="story-copy">Ceritakan rencana Anda kepada kami—kami akan membantu menemukan cara terbaik untuk berkeliling.</p>
-              <a class="btn btn-dark-outline" href="#pesan">Kenali perjalanan Anda <span aria-hidden="true">↗</span></a>
-              <div class="story-signature"><span class="signature-mark">A</span><span>AneX Taxi Lembongan<small>Teman perjalanan Anda di pulau</small></span></div>
+              <span class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE ABOUT US</span>
+              <h2 class="section-title">This island is our home.<br><em>We want it to feel like yours.</em></h2>
+              <p class="story-copy">AneX Taxi Lembongan is here to make exploring the island easier. We believe a great journey begins with comfort and a warm welcome.</p>
+              <p class="story-copy">Tell us about your plans—we’ll help you find the best way to get around.</p>
+              <a class="btn btn-dark-outline" href="#pesan">Plan your journey <span aria-hidden="true">↗</span></a>
+              <div class="story-signature"><span class="signature-mark">A</span><span>AneX Taxi Lembongan<small>Your island travel companion</small></span></div>
             </div>
           </div>
         </div>
@@ -177,23 +190,23 @@
         <div class="container">
           <div class="section-heading-row gallery-heading">
             <div>
-              <span class="eyebrow"><span class="eyebrow-dot"></span> SEPOTONG KEHIDUPAN PULAU</span>
-              <h2 class="section-title">Lihat yang <em>menanti.</em></h2>
+              <span class="eyebrow"><span class="eyebrow-dot"></span> A GLIMPSE OF ISLAND LIFE</span>
+              <h2 class="section-title">See what <em>awaits.</em></h2>
             </div>
             <span class="gallery-location">NUSA LEMBONGAN · BALI</span>
           </div>
           <div class="gallery-grid">
             <figure class="gallery-item gallery-item-large">
-              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.40%20PM.jpeg" alt="Pesisir dan laut biru di Nusa Lembongan" loading="lazy">
-              <figcaption><span>01</span> Sisi tenang pulau</figcaption>
+              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.40%20PM.jpeg" alt="Coastline and blue sea in Nusa Lembongan" loading="lazy">
+              <figcaption><span>01</span> The island’s quieter side</figcaption>
             </figure>
             <figure class="gallery-item">
-              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.37%20PM%20(1).jpeg" alt="Tamu menikmati perjalanan bersama AneX Taxi" loading="lazy">
-              <figcaption><span>02</span> Perjalanan bersama</figcaption>
+              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.37%20PM%20(1).jpeg" alt="Guests enjoying a ride with AneX Taxi" loading="lazy">
+              <figcaption><span>02</span> The journey together</figcaption>
             </figure>
             <figure class="gallery-item">
-              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.38%20PM%20(2).jpeg" alt="Kendaraan AneX Taxi Lembongan" loading="lazy">
-              <figcaption><span>03</span> Siap mengantar Anda</figcaption>
+              <img src="./asset/WhatsApp%20Image%202026-10-12%20at%207.49.38%20PM%20(2).jpeg" alt="An AneX Taxi Lembongan vehicle" loading="lazy">
+              <figcaption><span>03</span> Ready to take you there</figcaption>
             </figure>
           </div>
         </div>
@@ -205,15 +218,15 @@
             <div class="booking-orb" aria-hidden="true"></div>
             <div class="row align-items-center gy-4 position-relative">
               <div class="col-lg-8">
-                <span class="eyebrow booking-eyebrow"><span class="eyebrow-dot"></span> SAATNYA MENIKMATI PULAU</span>
-                <h2>Perjalanan Anda<br><em>dimulai dari sini.</em></h2>
-                <p>Ceritakan rencana perjalanan Anda. Kami siap membantu Anda menjelajahi Nusa Lembongan.</p>
+                <span class="eyebrow booking-eyebrow"><span class="eyebrow-dot"></span> TIME TO ENJOY THE ISLAND</span>
+                <h2>Your journey<br><em>starts right here.</em></h2>
+                <p>Tell us about your travel plans. We’re ready to help you explore Nusa Lembongan.</p>
               </div>
               <div class="col-lg-4 text-lg-end">
-                <a class="btn btn-sand booking-button" data-whatsapp href="https://wa.me/?text=Halo%20AneX%20Taxi%20Lembongan%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20perjalanan%20di%20Nusa%20Lembongan.">
-                  Hubungi kami <span aria-hidden="true">↗</span>
+                <a class="btn btn-sand booking-button" data-whatsapp href="https://wa.me/?text=Hello%20AneX%20Taxi%20Lembongan%2C%20I%27d%20like%20to%20ask%20about%20your%20transport%20services%20in%20Nusa%20Lembongan.">
+                  Contact us <span aria-hidden="true">↗</span>
                 </a>
-                <span class="booking-note">Kami tunggu kabar dari Anda</span>
+                <span class="booking-note">We look forward to hearing from you</span>
               </div>
             </div>
           </div>
@@ -224,16 +237,16 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-main">
-          <a class="navbar-brand brand-lockup" href="#beranda" aria-label="AneX Taxi Lembongan, kembali ke atas">
+          <a class="navbar-brand brand-lockup" href="#beranda" aria-label="AneX Taxi Lembongan, back to top">
             <img src="./asset/logoanextaxilembongan.png" alt="" class="brand-logo">
             <span class="brand-name">AneX <span>Taxi Lembongan</span></span>
           </a>
-          <p>Jelajahi lebih banyak. Nikmati setiap perjalanan.</p>
-          <a class="footer-top" href="#beranda">Kembali ke atas <span aria-hidden="true">↑</span></a>
+          <p>Explore more. Enjoy every journey.</p>
+          <a class="footer-top" href="#beranda">Back to top <span aria-hidden="true">↑</span></a>
         </div>
         <div class="footer-bottom">
           <span>© <span id="currentYear"></span> AneX Taxi Lembongan</span>
-          <span>Dibuat dengan hangat di Nusa Lembongan, Bali</span>
+          <span>Made with care in Nusa Lembongan, Bali</span>
         </div>
       </div>
     </footer>
@@ -247,33 +260,33 @@
           </div>
           <div class="chat-heading">
             <h2 id="chatTitle">AneX Taxi Lembongan</h2>
-            <p><span class="online-indicator"></span> Biasanya membalas dengan cepat</p>
+            <p><span class="online-indicator"></span> Usually replies quickly</p>
           </div>
-          <button class="chat-close" type="button" aria-label="Tutup chat" data-chat-close>
+          <button class="chat-close" type="button" aria-label="Close chat" data-chat-close>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
           </button>
         </div>
         <div class="chat-body">
-          <span class="chat-date">PERCAPAKAN BARU</span>
+          <span class="chat-date">NEW CONVERSATION</span>
           <div class="chat-bubble">
-            <p>Halo! 👋 Selamat datang di Lembongan.</p>
-            <p>Ada yang bisa kami bantu untuk perjalanan Anda?</p>
-            <span class="chat-time">AneX Taxi · sekarang</span>
+            <p>Hello! 👋 Welcome to Lembongan.</p>
+            <p>How can we help with your trip?</p>
+            <span class="chat-time">AneX Taxi · just now</span>
           </div>
           <form class="chat-form" data-chat-form>
-            <label class="visually-hidden" for="chatMessage">Tulis pesan WhatsApp</label>
+            <label class="visually-hidden" for="chatMessage">Write a WhatsApp message</label>
             <textarea
               id="chatMessage"
               class="chat-message"
               name="message"
-              placeholder="Tulis pesan Anda..."
+              placeholder="Write your message..."
               rows="3"
               required></textarea>
             <div class="chat-form-footer">
-              <span class="chat-hint">Pesan akan dibuka di WhatsApp</span>
+              <span class="chat-hint">Your message will open in WhatsApp</span>
               <button class="chat-send" type="submit">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7ZM22 2 11 13"/></svg>
-                Kirim pesan
+                Send message
               </button>
             </div>
           </form>
@@ -282,7 +295,7 @@
       <button
         class="whatsapp-launcher"
         type="button"
-        aria-label="Buka chat WhatsApp AneX Taxi Lembongan"
+        aria-label="Open AneX Taxi Lembongan WhatsApp chat"
         aria-controls="whatsappChat"
         aria-expanded="false"
         data-chat-toggle>

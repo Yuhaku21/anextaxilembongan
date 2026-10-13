@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "";
+const WHATSAPP_NUMBER = "6281278250336";
 const bookingMessage = "Hello AneX Taxi Lembongan, I'd like to ask about your transport services in Nusa Lembongan.";
 const whatsappUrl = WHATSAPP_NUMBER
   ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(bookingMessage)}`
@@ -28,7 +28,11 @@ if (document.readyState === "complete") {
 }
 
 document.querySelectorAll("[data-whatsapp]").forEach((link) => {
-  link.href = whatsappUrl;
+  const message = link.dataset.whatsappMessage || bookingMessage;
+  const url = WHATSAPP_NUMBER
+    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    : `https://wa.me/?text=${encodeURIComponent(message)}`;
+  link.href = url;
 });
 
 const chatPanel = document.querySelector("#whatsappChat");

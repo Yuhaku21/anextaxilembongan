@@ -10,7 +10,7 @@ Saat halaman pertama kali dibuka, animasi loading akan tampil dan menutup otomat
 
 ## Menyesuaikan tombol WhatsApp
 
-Atur `WHATSAPP_NUMBER` di `script.js` ke nomor bisnis dalam format internasional tanpa tanda `+` atau spasi, misalnya `6281234567890`. Jika dikosongkan, tautan WhatsApp akan membuka percakapan baru dengan pesan yang sudah terisi agar pengunjung dapat memilih kontak.
+Nomor WhatsApp bisnis `6281278250336` sudah diatur di `script.js` dalam format internasional tanpa tanda `+` atau spasi. Semua tautan booking dan chat WhatsApp menggunakan nomor ini. Untuk menggantinya, ubah nilai `WHATSAPP_NUMBER` di `script.js`.
 
 Tombol WhatsApp mengambang di kanan bawah membuka panel chat. Pengunjung dapat menulis pesan lalu memilih **Kirim pesan** untuk meneruskan pesan ke WhatsApp.
 

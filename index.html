@@ -97,9 +97,15 @@
           <img src="./asset/logoanextaxilembongan.png" alt="" class="brand-logo">
           <span class="brand-name">AneX <span>Taxi Lembongan</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="nav-actions">
+          <button class="language-toggle notranslate" id="languageToggle" type="button" aria-label="Translate to Indonesian" title="Translate to Indonesian" translate="no">
+            <span aria-hidden="true">文</span>
+            <span data-language-label>Bahasa Indonesia</span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
             <li class="nav-item"><a class="nav-link" href="#layanan">Services</a></li>
@@ -475,8 +481,11 @@
       </button>
     </div>
 
+    <div class="translate-widget" id="google_translate_element" aria-hidden="true"></div>
+    <span class="visually-hidden" id="languageStatus" aria-live="polite"></span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
   </body>
 </html>

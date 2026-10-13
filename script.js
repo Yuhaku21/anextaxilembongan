@@ -16,6 +16,62 @@ const whatsappUrl = WHATSAPP_NUMBER
 
 const pageLoader = document.querySelector("#pageLoader");
 const siteNav = document.querySelector(".site-nav");
+const languageToggle = document.querySelector("#languageToggle");
+const languageLabel = languageToggle.querySelector("[data-language-label]");
+const languageStatus = document.querySelector("#languageStatus");
+
+function setLanguageControl(language) {
+  const isIndonesian = language === "id";
+  const label = isIndonesian ? "English" : "Bahasa Indonesia";
+  const action = isIndonesian ? "Switch to English" : "Translate to Indonesian";
+
+  languageToggle.dataset.currentLanguage = language;
+  languageLabel.textContent = label;
+  languageToggle.setAttribute("aria-label", action);
+  languageToggle.title = action;
+}
+
+const isIndonesian = document.cookie
+  .split(";")
+  .some((cookie) => cookie.trim().endsWith("/en/id"));
+
+setLanguageControl(isIndonesian ? "id" : "en");
+document.documentElement.lang = isIndonesian ? "id" : "en";
+
+languageToggle.addEventListener("click", () => {
+  if (languageToggle.dataset.currentLanguage === "id") {
+    const cookieExpiration = "expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    document.cookie = `googtrans=; ${cookieExpiration}`;
+
+    if (window.location.hostname) {
+      document.cookie = `googtrans=; ${cookieExpiration}; domain=${window.location.hostname}`;
+    }
+
+    window.location.reload();
+    return;
+  }
+
+  const translateSelect = document.querySelector(".goog-te-combo");
+
+  if (!translateSelect) {
+    languageStatus.textContent = "Translation service is not ready. Please try again shortly.";
+    return;
+  }
+
+  translateSelect.value = "id";
+  translateSelect.dispatchEvent(new Event("change"));
+  setLanguageControl("id");
+  document.documentElement.lang = "id";
+  languageStatus.textContent = "Page translated to Indonesian.";
+});
+
+window.googleTranslateElementInit = () => {
+  new google.translate.TranslateElement({
+    pageLanguage: "en",
+    includedLanguages: "id",
+    autoDisplay: false
+  }, "google_translate_element");
+};
 
 function updateNavOnScroll() {
   siteNav.classList.toggle("is-scrolled", window.scrollY > 20);
